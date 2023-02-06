@@ -1,0 +1,114 @@
+.magic {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.magic__container {
+}
+.magic__question {
+    text-align: center;
+}
+.magic__decor {
+    text-align: center;
+}
+
+.magic__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.center-ball {
+    animation-name: upheaval;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;    
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+.magic__subtitle {
+    color: #090A0A;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.magic__fun-question input{
+    padding-left: 16px;
+    border: none;
+    outline: none;
+    background: none;
+}
+.magic__fun-question  {
+    display: flex;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #F2F4F5;
+    margin: 0 36px;
+    cursor: text;
+    transition: 0.5s;
+}
+
+.magic__fun-question:hover {
+    box-shadow: 0px 0px 50px #000000;
+}
+
+.magic__fun-button{
+    cursor: pointer;
+    justify-content: center;
+    margin-bottom: 31px;
+    transition: 0.5s;
+}
+.magic__fun-button button:hover{
+    opacity: 0.95;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.magic__fun-button button {
+    margin-top: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    background-color: #6B4EFF;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 48px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.magic__fun-separator {
+    display: inline-block;
+    background-color: #090A0A;
+    width: 148px;
+    height: 5px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+.magic__answer  {
+    max-width: 400px;
+}
+.magic__answer-title {
+    max-width: 100%;
+    font-weight: 700;
+    font-size: 32px;
+    color: #090A0A;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+
+.magic__answer-subtitle{
+    opacity: 0.5;
+    display: none;
+}
+
+.magic__answer-svg {
+    width: 100%;
+}
+@keyframes upheaval{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
